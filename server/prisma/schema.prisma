@@ -1,0 +1,87 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model Experience {
+  id           String      @id @default(cuid())
+  title        String
+  organization String
+  role         String
+  location     String      @default("")
+  startDate    String
+  endDate      String?
+  current      Boolean     @default(false)
+  type         String      @default("Professional")
+  description  String      @default("")
+  createdAt    DateTime    @default(now())
+  updatedAt    DateTime    @updatedAt
+  projects     Project[]
+  activities   Activity[]
+}
+
+model Project {
+  id           String      @id @default(cuid())
+  experienceId String
+  experience   Experience  @relation(fields: [experienceId], references: [id], onDelete: Cascade)
+  name         String
+  description  String      @default("")
+  system       String      @default("")
+  objective    String      @default("")
+  outcome      String      @default("")
+  isRnD        Boolean     @default(false)
+  notes        String      @default("")
+  createdAt    DateTime    @default(now())
+  updatedAt    DateTime    @updatedAt
+  activities   Activity[]
+  tags         ProjectTag[]
+}
+
+model Activity {
+  id                 String       @id @default(cuid())
+  experienceId       String
+  experience         Experience   @relation(fields: [experienceId], references: [id], onDelete: Cascade)
+  projectId          String?
+  project            Project?     @relation(fields: [projectId], references: [id], onDelete: SetNull)
+  what               String
+  how                String       @default("")
+  responsibility     String       @default("Exposure")
+  result             String       @default("")
+  problem            String?
+  diagnosis          String?
+  intervention       String?
+  interventionResult String?
+  notes              String       @default("")
+  createdAt          DateTime     @default(now())
+  updatedAt          DateTime     @updatedAt
+  tags               ActivityTag[]
+}
+
+model Tag {
+  id           String       @id @default(cuid())
+  name         String
+  category     String       @default("Other")
+  activityTags ActivityTag[]
+  projectTags  ProjectTag[]
+  @@unique([name, category])
+}
+
+model ActivityTag {
+  activityId String
+  tagId      String
+  activity   Activity @relation(fields: [activityId], references: [id], onDelete: Cascade)
+  tag        Tag      @relation(fields: [tagId], references: [id], onDelete: Cascade)
+  @@id([activityId, tagId])
+}
+
+model ProjectTag {
+  projectId String
+  tagId     String
+  project   Project @relation(fields: [projectId], references: [id], onDelete: Cascade)
+  tag       Tag     @relation(fields: [tagId], references: [id], onDelete: Cascade)
+  @@id([projectId, tagId])
+}

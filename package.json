@@ -1,0 +1,16 @@
+{
+  "name": "career-experience-db",
+  "private": true,
+  "type": "module",
+  "workspaces": ["client", "server"],
+  "scripts": {
+    "dev": "concurrently \"npm:dev:client\" \"npm:dev:server\"",
+    "dev:client": "npm --workspace client run dev",
+    "dev:server": "npm --workspace server run dev",
+    "build": "npm --workspace server run build && npm --workspace client run build",
+    "postinstall": "npm --workspace server run prisma:generate"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.0"
+  }
+}
