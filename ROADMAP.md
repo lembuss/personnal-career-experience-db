@@ -71,7 +71,7 @@ The **database is the source of truth**. The CVs are interpretations of that sou
 
 ### Professional
 - [x] Amazilia Aerospace
-- [ ] HORYZN
+- [x] HORYZN
 - [ ] Kipepeo Aerospace
 - [ ] Kendrone
 - [ ] ALS
