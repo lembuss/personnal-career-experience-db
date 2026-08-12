@@ -72,29 +72,41 @@ The **database is the source of truth**. The CVs are interpretations of that sou
 ### Professional
 - [x] Amazilia Aerospace
 - [x] HORYZN
-- [ ] Kipepeo Aerospace
-- [ ] Kendrone
-- [ ] ALS
+- [x] Kipepeo Aerospace
+- [x] Kendrone
+- [x] ALS
 
 ### Academic
-- [ ] TUM MSc
-- [ ] METU BSc
-- [ ] TUM student assistantship
-- [ ] TUM teaching assistantship
-- [ ] METU student assistantship
-- [ ] SI-PASS Calculus I & II
-
-### Leadership
-- [ ] Aerospace Society Vice President
-- [ ] LEAD!
-- [ ] Other leadership activities
+- [x] TUM MSc
+- [x] LEAD! Program
+- [x] METU BSc
+- [x] TUM student assistantship
+- [x] METU student assistantship
+- [x] SI-PASS Calculus I & II
 
 ### Projects
-- [ ] Kolibri eVTOL
-- [ ] UAM throughput modelling
-- [ ] Autonomous Sub-Terrain UAV
-- [ ] Agricultural UAS
-- [ ] Other significant university projects
+- [x] Kolibri eVTOL
+- [x] UAM throughput modelling
+- [x] Autonomous Sub-Terrain UAV
+- [x] Agricultural UAS
+- [x] Other significant university projects
+
+### Relevant Trainings
+- [ ] KCAA RPL & Instructor @ Kendrone 2021
+- [ ] Full Stack Software Develoment @ eMobilis 2020
+- [ ] KCAA PPL @ Skylink flight services 2015
+
+### Independent Project Work & Volunteering
+- [x] GIS work with Shalom
+- [x] Project Mentor @ Young scientist kenya with two projects
+    - [x] Aircraft refueling rig
+    - [x] hydrogen hybrid engine
+
+### Leadership - deprecated
+- [ ] Aerospace Society Vice President @ METU
+- [ ] International Student Association Secretary General @ METU
+- [ ] MUN President @ METU
+
 
 We should **not trust the current CV to be complete**. It is our starting point, not the definitive record.
 
