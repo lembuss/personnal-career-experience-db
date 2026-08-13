@@ -92,9 +92,9 @@ The **database is the source of truth**. The CVs are interpretations of that sou
 - [x] Other significant university projects
 
 ### Relevant Trainings
-- [ ] KCAA RPL & Instructor @ Kendrone 2021
-- [ ] Full Stack Software Develoment @ eMobilis 2020
-- [ ] KCAA PPL @ Skylink flight services 2015
+- [x] KCAA RPL & Instructor @ Kendrone 2021
+- [x] Full Stack Software Develoment @ eMobilis 2020
+- [x] KCAA PPL @ Skylink flight services 2015
 
 ### Independent Project Work & Volunteering
 - [x] GIS work with Shalom
