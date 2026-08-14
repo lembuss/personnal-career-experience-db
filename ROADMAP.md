@@ -102,10 +102,10 @@ The **database is the source of truth**. The CVs are interpretations of that sou
     - [x] Aircraft refueling rig
     - [x] hydrogen hybrid engine
 
-### Leadership - deprecated
-- [ ] Aerospace Society Vice President @ METU
-- [ ] International Student Association Secretary General @ METU
-- [ ] MUN President @ METU
+### Leadership 
+- [x] Aerospace Society Vice President @ METU
+- [x] International Student Association Secretary General @ METU
+- [x] MUN President @ METU
 
 
 We should **not trust the current CV to be complete**. It is our starting point, not the definitive record.
